@@ -12,12 +12,13 @@ import co.com.udem.rumboteca.model.EventDTO;
 
 @Path("/Api")
 public class RumbotecaRestfulWebService {
-
+	
+	RumbotecaFacade rumbotecaFacade = new RumbotecaFacade();
+	
 	@GET
 	@Path("/get/{city}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<EventDTO> getEventDTOInJSON(@PathParam("city") int city) {
-		RumbotecaFacade rumbotecaFacade = new RumbotecaFacade();
 		return rumbotecaFacade.getEventByCity(city);
 	}
 	
@@ -25,7 +26,6 @@ public class RumbotecaRestfulWebService {
 	@Path("/getEventTop")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<EventDTO> getEventDTOTopThenInJSON() {
-		RumbotecaFacade rumbotecaFacade = new RumbotecaFacade();
 		return rumbotecaFacade.getEventTopTen();
 	}
 }

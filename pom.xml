@@ -32,34 +32,10 @@
   <dependencies>
   
 	<dependency>
-	 	<groupId>org.springframework</groupId>
-	 	<artifactId>spring-core</artifactId>
-	 	<version>${org.springframework.version}</version>
-	</dependency>
-	
-	<dependency>
-		<groupId>javax.ws.rs</groupId>
-		<artifactId>jsr311-api</artifactId>
-		<version>1.1.1</version>
-	</dependency>
-	
-	<dependency>
-	  <groupId>javax.ws.rs</groupId>
-	  <artifactId>javax.ws.rs-api</artifactId>
-	  <version>2.0.1</version>
-	</dependency>
-	
-	<dependency>
   		<groupId>com.sun.jersey</groupId>
   		<artifactId>jersey-server</artifactId>
   		<version>1.8</version>
   	</dependency>
-  	
-  	<dependency>
-		<groupId>com.sun.jersey</groupId>
-		<artifactId>jersey-json</artifactId>
-		<version>1.8</version>
-	</dependency>
 	
 	<dependency>
 	    <groupId>com.sun.jersey</groupId>
@@ -67,18 +43,37 @@
 	    <version>1.17.1</version>
 	</dependency>
 	
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-json</artifactId>
+    	<version>1.8</version>
+    	<type>bundle</type>
+    </dependency>
+	
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-bundle</artifactId>
+    	<version>1.18.1</version>
+    </dependency>
+		
     <dependency>
 		<groupId>com.google.code.gson</groupId>
 		<artifactId>gson</artifactId>
 		<version>1.7.1</version>
     </dependency>
     
-	<dependency>
-		<groupId>rumboteca_backend</groupId>
-		<artifactId>rumboteca_backend</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+    <dependency>
+	  <groupId>com.owlike</groupId>
+	  <artifactId>genson</artifactId>
+	  <version>0.99</version>
 	</dependency>
-	
+ 
+    <dependency>
+    	<groupId>rumboteca_backend</groupId>
+    	<artifactId>rumboteca_backend</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
   </dependencies>
   <name>rumboteca_restful</name>
 </project>
